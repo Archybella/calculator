@@ -52,6 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
       updateDisplay();
     };
   
+    const deleteClick = () => {
+      currentNumber = currentNumber.slice(0, -1); // Remove the last character
+      updateDisplay();
+    };
+  
     const decimalClick = () => {
       if (!currentNumber.includes('.')) {
         currentNumber += '.';
@@ -70,6 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
           handleEqualsClick();
         } else if (value === 'C') {
           clearAll();
+        } else if (value === 'Delete') {
+          deleteClick();
         } else if (value === '.') {
           decimalClick();
         }

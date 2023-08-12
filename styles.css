@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f2f2f2;
+    background-color: black;
   }
   
   .calculator {
@@ -40,10 +40,16 @@ body {
   }
   
   .operator {
-    background-color: #f39c12;
+    background-color: maroon;
   }
   
   .btn:hover {
     background-color: #555;
+  }
+  
+  footer {
+    text-align: bottom;
+    margin-top: 20px;
+    color: #888;
   }
   
