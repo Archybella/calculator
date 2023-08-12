@@ -64,6 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
   
+    const themeToggle = document.getElementById('theme-toggle');
+  
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+    });
+  
     document.querySelectorAll('.btn').forEach((button) => {
       button.addEventListener('click', () => {
         const value = button.textContent;

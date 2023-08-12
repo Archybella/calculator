@@ -46,6 +46,26 @@ body {
   .btn:hover {
     background-color: #555;
   }
+
+  .dark-mode .calculator {
+    background-color: #333;
+    color: white;
+  }
+  
+  .dark-mode .display {
+    background-color: #444;
+  }
+  
+  .light-mode .calculator {
+    background-color: white;
+    color: black;
+  }
+  
+  .light-mode .display {
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
   
   footer {
     text-align: bottom;
